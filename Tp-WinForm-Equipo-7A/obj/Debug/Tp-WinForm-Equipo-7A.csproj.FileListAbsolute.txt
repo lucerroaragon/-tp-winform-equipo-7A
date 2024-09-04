@@ -1,0 +1,20 @@
+D:\UTN\Programación 3\-tp-winform-equipo-7A\Proyecto TP2 WinForm\Gention-de-Articulos\Tp-WinForm-Equipo-7A\bin\Debug\Tp-WinForm-Equipo-7A.exe.config
+D:\UTN\Programación 3\-tp-winform-equipo-7A\Proyecto TP2 WinForm\Gention-de-Articulos\Tp-WinForm-Equipo-7A\bin\Debug\Tp-WinForm-Equipo-7A.exe
+D:\UTN\Programación 3\-tp-winform-equipo-7A\Proyecto TP2 WinForm\Gention-de-Articulos\Tp-WinForm-Equipo-7A\bin\Debug\Tp-WinForm-Equipo-7A.pdb
+D:\UTN\Programación 3\-tp-winform-equipo-7A\Proyecto TP2 WinForm\Gention-de-Articulos\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.csproj.AssemblyReference.cache
+D:\UTN\Programación 3\-tp-winform-equipo-7A\Proyecto TP2 WinForm\Gention-de-Articulos\Tp-WinForm-Equipo-7A\obj\Debug\Tp_WinForm_Equipo_7A.Form1.resources
+D:\UTN\Programación 3\-tp-winform-equipo-7A\Proyecto TP2 WinForm\Gention-de-Articulos\Tp-WinForm-Equipo-7A\obj\Debug\Tp_WinForm_Equipo_7A.Properties.Resources.resources
+D:\UTN\Programación 3\-tp-winform-equipo-7A\Proyecto TP2 WinForm\Gention-de-Articulos\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.csproj.GenerateResource.cache
+D:\UTN\Programación 3\-tp-winform-equipo-7A\Proyecto TP2 WinForm\Gention-de-Articulos\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.csproj.CoreCompileInputs.cache
+D:\UTN\Programación 3\-tp-winform-equipo-7A\Proyecto TP2 WinForm\Gention-de-Articulos\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.exe
+D:\UTN\Programación 3\-tp-winform-equipo-7A\Proyecto TP2 WinForm\Gention-de-Articulos\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.pdb
+D:\UTN\Programación 3\-tp-winform-equipo-7A\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\bin\Debug\Tp-WinForm-Equipo-7A.exe.config
+D:\UTN\Programación 3\-tp-winform-equipo-7A\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\bin\Debug\Tp-WinForm-Equipo-7A.exe
+D:\UTN\Programación 3\-tp-winform-equipo-7A\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\bin\Debug\Tp-WinForm-Equipo-7A.pdb
+D:\UTN\Programación 3\-tp-winform-equipo-7A\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.csproj.AssemblyReference.cache
+D:\UTN\Programación 3\-tp-winform-equipo-7A\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp_WinForm_Equipo_7A.Form1.resources
+D:\UTN\Programación 3\-tp-winform-equipo-7A\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp_WinForm_Equipo_7A.Properties.Resources.resources
+D:\UTN\Programación 3\-tp-winform-equipo-7A\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.csproj.GenerateResource.cache
+D:\UTN\Programación 3\-tp-winform-equipo-7A\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.csproj.CoreCompileInputs.cache
+D:\UTN\Programación 3\-tp-winform-equipo-7A\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.exe
+D:\UTN\Programación 3\-tp-winform-equipo-7A\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.pdb
