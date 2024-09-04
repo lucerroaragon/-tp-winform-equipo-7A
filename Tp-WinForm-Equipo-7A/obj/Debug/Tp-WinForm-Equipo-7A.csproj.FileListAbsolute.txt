@@ -39,3 +39,6 @@ C:\Users\lcerr\Source\Repos\lucerroaragon\-tp-winform-equipo-7A\Tp-WinForm-Equip
 C:\Users\lcerr\Source\Repos\lucerroaragon\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.exe
 C:\Users\lcerr\Source\Repos\lucerroaragon\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.pdb
 C:\Users\lcerr\Source\Repos\lucerroaragon\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp_WinForm_Equipo_7A.Form2.resources
+C:\Users\yurel\OneDrive\Documentos\pedro\programacioIII\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.csproj.AssemblyReference.cache
+C:\Users\yurel\OneDrive\Documentos\pedro\programacioIII\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.exe
+C:\Users\yurel\OneDrive\Documentos\pedro\programacioIII\-tp-winform-equipo-7A\Tp-WinForm-Equipo-7A\obj\Debug\Tp-WinForm-Equipo-7A.pdb
