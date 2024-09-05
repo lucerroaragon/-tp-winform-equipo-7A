@@ -46,29 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\EliminarArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EliminarArticulo.Designer.cs">
+      <DependentUpon>EliminarArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListaArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaArticulos.Designer.cs">
+      <DependentUpon>ListaArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModificarArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModificarArticulo.Designer.cs">
+      <DependentUpon>ModificarArticulo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Articulos.cs" />
     <Compile Include="Models\Categorias.cs" />
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Forms\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Imagenes.cs" />
     <Compile Include="Models\Marcas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EliminarArticulo.resx">
+      <DependentUpon>EliminarArticulo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaArticulos.resx">
+      <DependentUpon>ListaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModificarArticulo.resx">
+      <DependentUpon>ModificarArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,9 +119,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\muchos-moviles1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utils\" />
