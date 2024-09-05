@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Tp_WinForm_Equipo_7A.Forms
 {
-    public partial class Form2 : Form
+    public partial class ModificarArticulo : Form
     {
-        public Form2()
+        public ModificarArticulo()
         {
             InitializeComponent();
         }
 
-        
+       
     }
 }

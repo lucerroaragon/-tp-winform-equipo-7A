@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Tp_WinForm_Equipo_7A.Forms
 {
-    public partial class Form3 : Form
+    public partial class EliminarArticulo : Form
     {
-        public Form3()
+        public EliminarArticulo()
         {
             InitializeComponent();
         }
-
-        
     }
 }
