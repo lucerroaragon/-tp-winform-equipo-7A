@@ -16,9 +16,18 @@ namespace Tp_WinForm_Equipo_7A
 {
     public partial class AltaArticulo : Form
     {
+        private Articulo articulo = null;
+
         public AltaArticulo()
         {
             InitializeComponent();
+            Text = "Agregar articulo";
+        }
+        public AltaArticulo(Articulo articulo)
+        {
+            InitializeComponent();
+            this.articulo = articulo;
+            Text = "Modificar articulo";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -28,21 +37,34 @@ namespace Tp_WinForm_Equipo_7A
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Articulo nuevo = new Articulo();
+           
             ArticuloNegocio negocio = new ArticuloNegocio();
 
             try
             {
-                nuevo.CodArticulo = txtCodigo.Text;
-                nuevo.Nombre = txtNombre.Text;
-                nuevo.Descripcion = txtDescripcion.Text;
-                nuevo.Precio = decimal.Parse(txtPrecio.Text);
-                nuevo.categoria = (Categoria)cboCategoria.SelectedItem;
-                nuevo.marca = (Marca)cboMarca.SelectedItem;
+                if (articulo == null)
+                articulo = new Articulo();
+                articulo.CodArticulo = txtCodigo.Text;
+                articulo.Nombre = txtNombre.Text;
+                articulo.Descripcion = txtDescripcion.Text;
+                articulo.Precio = decimal.Parse(txtPrecio.Text);
+                articulo.categoria = (Categoria)cboCategoria.SelectedItem;
+                articulo.marca = (Marca)cboMarca.SelectedItem;
 
+                if (articulo.IdArticulo != 0)
+                {
+                    negocio.modificar(articulo);
+                    MessageBox.Show("Modificado exitoso");
 
-                negocio.agregar(nuevo);
-                MessageBox.Show("Agregado exitoso");
+                }
+                else
+                {
+
+                    negocio.agregar(articulo);
+                    MessageBox.Show("Agregado exitoso");
+
+                }
+                
                 Close();
 
             }
@@ -70,6 +92,17 @@ namespace Tp_WinForm_Equipo_7A
 
                 cboMarca.DisplayMember = "Nombre"; // Campo que se mostrará
                 cboMarca.ValueMember = "IdMarca"; // Campo que será el valor
+
+                if (articulo != null)
+                {
+                    txtCodigo.Text = articulo.CodArticulo.ToString();
+                    txtNombre.Text = articulo.Nombre;
+                    txtDescripcion.Text = articulo.Descripcion;
+                    txtPrecio.Text = articulo.Precio.ToString();
+                    cboCategoria.SelectedValue = articulo.categoria.IdCategoria;
+                    cboMarca.SelectedValue = articulo.marca.IdMarca;
+                }
+            
             }
             catch (Exception ex)
             {

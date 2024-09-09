@@ -76,5 +76,16 @@ private void cargarImagen(string imagen)
             cargar();
 
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado;
+            seleccionado = (Articulo)dgv_ArticulosTodos.CurrentRow.DataBoundItem;
+            AltaArticulo modificar = new AltaArticulo(seleccionado);
+            modificar.ShowDialog();
+            cargar();
+
+
+        }
     }
 }
