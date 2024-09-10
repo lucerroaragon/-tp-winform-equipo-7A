@@ -47,7 +47,7 @@
             this.lblCatalogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCatalogo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblCatalogo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCatalogo.Location = new System.Drawing.Point(281, 50);
+            this.lblCatalogo.Location = new System.Drawing.Point(419, 42);
             this.lblCatalogo.Name = "lblCatalogo";
             this.lblCatalogo.Size = new System.Drawing.Size(369, 39);
             this.lblCatalogo.TabIndex = 0;
@@ -64,7 +64,7 @@
             this.dgv_ArticulosTodos.MultiSelect = false;
             this.dgv_ArticulosTodos.Name = "dgv_ArticulosTodos";
             this.dgv_ArticulosTodos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ArticulosTodos.Size = new System.Drawing.Size(675, 370);
+            this.dgv_ArticulosTodos.Size = new System.Drawing.Size(665, 370);
             this.dgv_ArticulosTodos.TabIndex = 1;
             this.dgv_ArticulosTodos.SelectionChanged += new System.EventHandler(this.dgv_ArticulosTodos_SelectionChanged);
             // 
@@ -93,7 +93,7 @@
             // 
             this.btnModificar.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(300, 611);
+            this.btnModificar.Location = new System.Drawing.Point(293, 611);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(119, 36);
             this.btnModificar.TabIndex = 4;
@@ -111,6 +111,7 @@
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblDescripcionCatalogo
             // 
@@ -139,7 +140,8 @@
             this.Controls.Add(this.pxbArticulo);
             this.Controls.Add(this.dgv_ArticulosTodos);
             this.Controls.Add(this.lblCatalogo);
-            this.MinimumSize = new System.Drawing.Size(813, 669);
+            this.MaximumSize = new System.Drawing.Size(1232, 764);
+            this.MinimumSize = new System.Drawing.Size(1232, 764);
             this.Name = "TodosArticulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.TodosArticulos_Load);

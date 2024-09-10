@@ -242,6 +242,8 @@
             this.Controls.Add(this.nombre);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.codigo);
+            this.MaximumSize = new System.Drawing.Size(730, 489);
+            this.MinimumSize = new System.Drawing.Size(730, 489);
             this.Name = "AltaArticulo";
             this.Text = "AltaArticulo";
             this.Load += new System.EventHandler(this.AltaArticulo_Load);

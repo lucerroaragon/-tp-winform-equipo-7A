@@ -52,6 +52,12 @@
     <Compile Include="AltaArticulo.Designer.cs">
       <DependentUpon>AltaArticulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaMarca.Designer.cs">
+      <DependentUpon>AltaMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AltaArticulo.resx">
       <DependentUpon>AltaArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaMarca.resx">
+      <DependentUpon>AltaMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ArticulosTodos.resx">
       <DependentUpon>ArticulosTodos.cs</DependentUpon>
