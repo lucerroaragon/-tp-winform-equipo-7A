@@ -47,7 +47,7 @@
             this.lblCatalogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCatalogo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblCatalogo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCatalogo.Location = new System.Drawing.Point(419, 42);
+            this.lblCatalogo.Location = new System.Drawing.Point(403, 42);
             this.lblCatalogo.Name = "lblCatalogo";
             this.lblCatalogo.Size = new System.Drawing.Size(369, 39);
             this.lblCatalogo.TabIndex = 0;
@@ -64,13 +64,13 @@
             this.dgv_ArticulosTodos.MultiSelect = false;
             this.dgv_ArticulosTodos.Name = "dgv_ArticulosTodos";
             this.dgv_ArticulosTodos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ArticulosTodos.Size = new System.Drawing.Size(665, 370);
+            this.dgv_ArticulosTodos.Size = new System.Drawing.Size(647, 370);
             this.dgv_ArticulosTodos.TabIndex = 1;
             this.dgv_ArticulosTodos.SelectionChanged += new System.EventHandler(this.dgv_ArticulosTodos_SelectionChanged);
             // 
             // pxbArticulo
             // 
-            this.pxbArticulo.Location = new System.Drawing.Point(803, 212);
+            this.pxbArticulo.Location = new System.Drawing.Point(784, 212);
             this.pxbArticulo.Name = "pxbArticulo";
             this.pxbArticulo.Size = new System.Drawing.Size(349, 370);
             this.pxbArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -132,7 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1216, 725);
+            this.ClientSize = new System.Drawing.Size(1185, 725);
             this.Controls.Add(this.lblDescripcionCatalogo);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
@@ -140,8 +140,6 @@
             this.Controls.Add(this.pxbArticulo);
             this.Controls.Add(this.dgv_ArticulosTodos);
             this.Controls.Add(this.lblCatalogo);
-            this.MaximumSize = new System.Drawing.Size(1232, 764);
-            this.MinimumSize = new System.Drawing.Size(1232, 764);
             this.Name = "TodosArticulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.TodosArticulos_Load);

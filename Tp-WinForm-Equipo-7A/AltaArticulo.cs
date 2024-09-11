@@ -17,6 +17,7 @@ namespace Tp_WinForm_Equipo_7A
     public partial class AltaArticulo : Form
     {
         private Articulo articulo = null;
+        private Imagen img = null;
 
         public AltaArticulo()
         {
@@ -42,12 +43,15 @@ namespace Tp_WinForm_Equipo_7A
 
             try
             {
-                if (articulo == null)
-                articulo = new Articulo();
+                if(articulo ==  null)
+                    articulo = new Articulo();
+                articulo.imagen = new Imagen();
+
                 articulo.CodArticulo = txtCodigo.Text;
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDescripcion.Text;
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
+                articulo.imagen.Url = txtUrl.Text;
                 articulo.categoria = (Categoria)cboCategoria.SelectedItem;
                 articulo.marca = (Marca)cboMarca.SelectedItem;
 
@@ -55,14 +59,11 @@ namespace Tp_WinForm_Equipo_7A
                 {
                     negocio.modificar(articulo);
                     MessageBox.Show("Modificado exitoso");
-
                 }
                 else
                 {
-
                     negocio.agregar(articulo);
                     MessageBox.Show("Agregado exitoso");
-
                 }
                 
                 Close();
@@ -99,6 +100,8 @@ namespace Tp_WinForm_Equipo_7A
                     txtNombre.Text = articulo.Nombre;
                     txtDescripcion.Text = articulo.Descripcion;
                     txtPrecio.Text = articulo.Precio.ToString();
+                    txtUrl.Text = articulo.imagen.Url;
+                    cargarImagen(articulo.imagen.Url);
                     cboCategoria.SelectedValue = articulo.categoria.IdCategoria;
                     cboMarca.SelectedValue = articulo.marca.IdMarca;
                 }
@@ -123,7 +126,7 @@ namespace Tp_WinForm_Equipo_7A
                 pbxAltaArticulo.Load(imagen);
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 pbxAltaArticulo.Load("https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png");

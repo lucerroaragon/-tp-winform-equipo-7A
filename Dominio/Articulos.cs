@@ -22,20 +22,7 @@ namespace Dominio
         public Marca marca { get; set; }
         [DisplayName("Categoria")]
         public Categoria categoria { get; set; }
-        public List<Imagen> Imagenes { get; set; }
-
-        // Propiedad para la URL de la primera imagen
-        public string ImagenUrl
-        {
-            get
-            {
-                return Imagenes != null && Imagenes.Count > 0 ? Imagenes[0].Url : null;
-            }
-
-
-
-        }
-
+        public Imagen imagen { get; set; }
 
     }
 }

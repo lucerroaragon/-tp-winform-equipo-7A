@@ -31,7 +31,7 @@ namespace Tp_WinForm_Equipo_7A
         private void dgv_ArticulosTodos_SelectionChanged(object sender, EventArgs e)
         {
             Articulo seleccionado=(Articulo)dgv_ArticulosTodos.CurrentRow.DataBoundItem;
-            cargarImagen(seleccionado.ImagenUrl);
+            cargarImagen(seleccionado.imagen.Url);
 
         }
 
@@ -43,9 +43,10 @@ namespace Tp_WinForm_Equipo_7A
 
                 listaArticulos = negocio.listarTodos();
                 dgv_ArticulosTodos.DataSource = listaArticulos;
-                dgv_ArticulosTodos.Columns["ImagenUrl"].Visible = false;
+                dgv_ArticulosTodos.Columns["imagen"].Visible = false;
                 dgv_ArticulosTodos.Columns["IdArticulo"].Visible = false;
-                cargarImagen(listaArticulos[0].ImagenUrl);
+                cargarImagen(listaArticulos[0].imagen.Url);
+
             }
             catch (Exception ex)
             {
@@ -60,7 +61,7 @@ private void cargarImagen(string imagen)
                 pxbArticulo.Load(imagen);
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 
                    pxbArticulo.Load("https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png");
@@ -81,6 +82,7 @@ private void cargarImagen(string imagen)
         {
             Articulo seleccionado;
             seleccionado = (Articulo)dgv_ArticulosTodos.CurrentRow.DataBoundItem;
+
             AltaArticulo modificar = new AltaArticulo(seleccionado);
             modificar.ShowDialog();
             cargar();
