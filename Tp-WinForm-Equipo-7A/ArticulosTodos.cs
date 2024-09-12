@@ -124,11 +124,11 @@ namespace Tp_WinForm_Equipo_7A
             List<Articulo> listaFiltrada;
             string filtro = txbFitroRapido.Text;
 
-            if (filtro.Length >= 3)
+            if (filtro.Length >= 2)
             {
 
                 listaFiltrada = listaArticulos.FindAll(x => x.Nombre.ToUpper().Contains(filtro.ToUpper()));
-                listaFiltrada = listaArticulos.FindAll(x => x.CodArticulo.ToUpper().Contains(filtro.ToUpper()));
+                
             }
             else
             {
@@ -175,7 +175,7 @@ namespace Tp_WinForm_Equipo_7A
                 string campo = cboCampo.SelectedItem.ToString();
                 string criterio = cboCriterio.SelectedItem.ToString();
                 string filtro = txbFiltroCompleto.Text;
-                //dgv_ArticulosTodos.DataSource = negocio.filtrar(campo, criterio, filtro);
+                dgv_ArticulosTodos.DataSource = negocio.filtrar(campo, criterio, filtro);
             }
             catch (Exception ex)
             {

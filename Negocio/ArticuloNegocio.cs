@@ -190,5 +190,30 @@ namespace Negocio
             }
         }
 
+        public object filtrar(string campo, string criterio, string filtro)
+        {
+            List<Articulo> lista = new List<Articulo>();
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+
+
+
+
+
+                return lista;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+            
+        }
     }
 }
