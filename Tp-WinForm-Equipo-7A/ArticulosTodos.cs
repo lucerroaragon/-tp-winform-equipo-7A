@@ -26,15 +26,18 @@ namespace Tp_WinForm_Equipo_7A
         private void TodosArticulos_Load(object sender, EventArgs e)
         {
             cargar();
+            cboCampo.Items.Add("Nombre");
+            cboCampo.Items.Add("Marca");
+            cboCampo.Items.Add("Precio");
         }
 
         private void dgv_ArticulosTodos_SelectionChanged(object sender, EventArgs e)
         {
-            Articulo seleccionado=(Articulo)dgv_ArticulosTodos.CurrentRow.DataBoundItem;
+            Articulo seleccionado = (Articulo)dgv_ArticulosTodos.CurrentRow.DataBoundItem;
             dgv_ArticulosTodos.Columns["imagen"].Visible = false;
             dgv_ArticulosTodos.Columns["IdArticulo"].Visible = false;
             cargarImagen(seleccionado.imagen.Url);
-            
+
 
         }
 
@@ -46,7 +49,7 @@ namespace Tp_WinForm_Equipo_7A
 
                 listaArticulos = negocio.listarTodos();
                 dgv_ArticulosTodos.DataSource = listaArticulos;
-            
+
                 cargarImagen(listaArticulos[0].imagen.Url);
 
             }
@@ -56,7 +59,7 @@ namespace Tp_WinForm_Equipo_7A
             }
         }
 
-   
+
 
 
         private void cargarImagen(string imagen)
@@ -68,8 +71,8 @@ namespace Tp_WinForm_Equipo_7A
             }
             catch (Exception)
             {
-                
-                   pxbArticulo.Load("https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png");
+
+                pxbArticulo.Load("https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png");
 
             }
         }
@@ -125,7 +128,7 @@ namespace Tp_WinForm_Equipo_7A
             {
 
                 listaFiltrada = listaArticulos.FindAll(x => x.Nombre.ToUpper().Contains(filtro.ToUpper()));
-
+                listaFiltrada = listaArticulos.FindAll(x => x.CodArticulo.ToUpper().Contains(filtro.ToUpper()));
             }
             else
             {
@@ -134,14 +137,55 @@ namespace Tp_WinForm_Equipo_7A
 
             dgv_ArticulosTodos.DataSource = null;
             dgv_ArticulosTodos.DataSource = listaFiltrada;
-          
-            
-
-
-
 
 
 
         }
+
+        private void cmbCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string opcion = cboCampo.SelectedItem.ToString();
+
+            if (opcion == "Precio")
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Mayor a");
+                cboCriterio.Items.Add("Menor a");
+                cboCriterio.Items.Add("Igual a");
+
+            }
+            else
+            {
+
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Comienza con");
+                cboCriterio.Items.Add("Termina con");
+                cboCriterio.Items.Add("Contiene");
+
+
+
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+                string campo = cboCampo.SelectedItem.ToString();
+                string criterio = cboCriterio.SelectedItem.ToString();
+                string filtro = txbFiltroCompleto.Text;
+                //dgv_ArticulosTodos.DataSource = negocio.filtrar(campo, criterio, filtro);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+
+            }
+
+
+        }
+
+        
     }
 }

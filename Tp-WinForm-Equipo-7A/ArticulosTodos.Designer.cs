@@ -37,6 +37,14 @@
             this.lblDescripcionCatalogo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txbFitroRapido = new System.Windows.Forms.TextBox();
+            this.btnVerDetalle = new System.Windows.Forms.Button();
+            this.lblCampo = new System.Windows.Forms.Label();
+            this.lblCriterio = new System.Windows.Forms.Label();
+            this.lblFiltroCompleto = new System.Windows.Forms.Label();
+            this.cboCriterio = new System.Windows.Forms.ComboBox();
+            this.cboCampo = new System.Windows.Forms.ComboBox();
+            this.txbFiltroCompleto = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ArticulosTodos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pxbArticulo)).BeginInit();
             this.SuspendLayout();
@@ -83,7 +91,7 @@
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(128, 611);
+            this.btnAgregar.Location = new System.Drawing.Point(48, 600);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(119, 36);
             this.btnAgregar.TabIndex = 3;
@@ -95,7 +103,7 @@
             // 
             this.btnModificar.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(293, 611);
+            this.btnModificar.Location = new System.Drawing.Point(206, 600);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(119, 36);
             this.btnModificar.TabIndex = 4;
@@ -107,7 +115,7 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(463, 611);
+            this.btnEliminar.Location = new System.Drawing.Point(363, 600);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(119, 36);
             this.btnEliminar.TabIndex = 5;
@@ -145,6 +153,83 @@
             this.txbFitroRapido.TabIndex = 8;
             this.txbFitroRapido.TextChanged += new System.EventHandler(this.txbFitroRapido_TextChanged);
             // 
+            // btnVerDetalle
+            // 
+            this.btnVerDetalle.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnVerDetalle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerDetalle.Location = new System.Drawing.Point(918, 600);
+            this.btnVerDetalle.Name = "btnVerDetalle";
+            this.btnVerDetalle.Size = new System.Drawing.Size(119, 36);
+            this.btnVerDetalle.TabIndex = 9;
+            this.btnVerDetalle.Text = "Ver detalle";
+            this.btnVerDetalle.UseVisualStyleBackColor = false;
+            // 
+            // lblCampo
+            // 
+            this.lblCampo.AutoSize = true;
+            this.lblCampo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblCampo.Location = new System.Drawing.Point(48, 660);
+            this.lblCampo.Name = "lblCampo";
+            this.lblCampo.Size = new System.Drawing.Size(51, 17);
+            this.lblCampo.TabIndex = 10;
+            this.lblCampo.Text = "Campo";
+            // 
+            // lblCriterio
+            // 
+            this.lblCriterio.AutoSize = true;
+            this.lblCriterio.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblCriterio.Location = new System.Drawing.Point(240, 660);
+            this.lblCriterio.Name = "lblCriterio";
+            this.lblCriterio.Size = new System.Drawing.Size(54, 17);
+            this.lblCriterio.TabIndex = 11;
+            this.lblCriterio.Text = "Criterio";
+            // 
+            // lblFiltroCompleto
+            // 
+            this.lblFiltroCompleto.AutoSize = true;
+            this.lblFiltroCompleto.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblFiltroCompleto.Location = new System.Drawing.Point(441, 664);
+            this.lblFiltroCompleto.Name = "lblFiltroCompleto";
+            this.lblFiltroCompleto.Size = new System.Drawing.Size(41, 17);
+            this.lblFiltroCompleto.TabIndex = 12;
+            this.lblFiltroCompleto.Text = "Filtro";
+            // 
+            // cboCriterio
+            // 
+            this.cboCriterio.FormattingEnabled = true;
+            this.cboCriterio.Location = new System.Drawing.Point(300, 660);
+            this.cboCriterio.Name = "cboCriterio";
+            this.cboCriterio.Size = new System.Drawing.Size(121, 21);
+            this.cboCriterio.TabIndex = 13;
+            // 
+            // cboCampo
+            // 
+            this.cboCampo.FormattingEnabled = true;
+            this.cboCampo.Location = new System.Drawing.Point(105, 660);
+            this.cboCampo.Name = "cboCampo";
+            this.cboCampo.Size = new System.Drawing.Size(121, 21);
+            this.cboCampo.TabIndex = 14;
+            this.cboCampo.SelectedIndexChanged += new System.EventHandler(this.cmbCampo_SelectedIndexChanged);
+            // 
+            // txbFiltroCompleto
+            // 
+            this.txbFiltroCompleto.Location = new System.Drawing.Point(488, 661);
+            this.txbFiltroCompleto.Name = "txbFiltroCompleto";
+            this.txbFiltroCompleto.Size = new System.Drawing.Size(121, 20);
+            this.txbFiltroCompleto.TabIndex = 15;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(637, 650);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(119, 36);
+            this.btnBuscar.TabIndex = 16;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // TodosArticulos
             // 
             this.AllowDrop = true;
@@ -153,6 +238,14 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1185, 725);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txbFiltroCompleto);
+            this.Controls.Add(this.cboCampo);
+            this.Controls.Add(this.cboCriterio);
+            this.Controls.Add(this.lblFiltroCompleto);
+            this.Controls.Add(this.lblCriterio);
+            this.Controls.Add(this.lblCampo);
+            this.Controls.Add(this.btnVerDetalle);
             this.Controls.Add(this.txbFitroRapido);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDescripcionCatalogo);
@@ -183,6 +276,14 @@
         private System.Windows.Forms.Label lblDescripcionCatalogo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txbFitroRapido;
+        private System.Windows.Forms.Button btnVerDetalle;
+        private System.Windows.Forms.Label lblCampo;
+        private System.Windows.Forms.Label lblCriterio;
+        private System.Windows.Forms.Label lblFiltroCompleto;
+        private System.Windows.Forms.ComboBox cboCriterio;
+        private System.Windows.Forms.ComboBox cboCampo;
+        private System.Windows.Forms.TextBox txbFiltroCompleto;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
 
