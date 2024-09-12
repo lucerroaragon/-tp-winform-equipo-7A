@@ -31,7 +31,10 @@ namespace Tp_WinForm_Equipo_7A
         private void dgv_ArticulosTodos_SelectionChanged(object sender, EventArgs e)
         {
             Articulo seleccionado=(Articulo)dgv_ArticulosTodos.CurrentRow.DataBoundItem;
+            dgv_ArticulosTodos.Columns["imagen"].Visible = false;
+            dgv_ArticulosTodos.Columns["IdArticulo"].Visible = false;
             cargarImagen(seleccionado.imagen.Url);
+            
 
         }
 
@@ -43,8 +46,7 @@ namespace Tp_WinForm_Equipo_7A
 
                 listaArticulos = negocio.listarTodos();
                 dgv_ArticulosTodos.DataSource = listaArticulos;
-                dgv_ArticulosTodos.Columns["imagen"].Visible = false;
-                dgv_ArticulosTodos.Columns["IdArticulo"].Visible = false;
+            
                 cargarImagen(listaArticulos[0].imagen.Url);
 
             }
@@ -54,7 +56,10 @@ namespace Tp_WinForm_Equipo_7A
             }
         }
 
-private void cargarImagen(string imagen)
+   
+
+
+        private void cargarImagen(string imagen)
         {
             try
             {
@@ -108,6 +113,35 @@ private void cargarImagen(string imagen)
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void txbFitroRapido_TextChanged(object sender, EventArgs e)
+        {
+
+            List<Articulo> listaFiltrada;
+            string filtro = txbFitroRapido.Text;
+
+            if (filtro.Length >= 3)
+            {
+
+                listaFiltrada = listaArticulos.FindAll(x => x.Nombre.ToUpper().Contains(filtro.ToUpper()));
+
+            }
+            else
+            {
+                listaFiltrada = listaArticulos;
+            }
+
+            dgv_ArticulosTodos.DataSource = null;
+            dgv_ArticulosTodos.DataSource = listaFiltrada;
+          
+            
+
+
+
+
+
+
         }
     }
 }

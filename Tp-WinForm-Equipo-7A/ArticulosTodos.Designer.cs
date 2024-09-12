@@ -35,6 +35,8 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lblDescripcionCatalogo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txbFitroRapido = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ArticulosTodos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pxbArticulo)).BeginInit();
             this.SuspendLayout();
@@ -125,6 +127,24 @@
     "odifica o elimina productos, y mantén actualizada la información clave de tu inv" +
     "entario en un solo lugar";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(48, 165);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Filtro rapido";
+            // 
+            // txbFitroRapido
+            // 
+            this.txbFitroRapido.Location = new System.Drawing.Point(139, 165);
+            this.txbFitroRapido.Name = "txbFitroRapido";
+            this.txbFitroRapido.Size = new System.Drawing.Size(546, 20);
+            this.txbFitroRapido.TabIndex = 8;
+            this.txbFitroRapido.TextChanged += new System.EventHandler(this.txbFitroRapido_TextChanged);
+            // 
             // TodosArticulos
             // 
             this.AllowDrop = true;
@@ -133,6 +153,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1185, 725);
+            this.Controls.Add(this.txbFitroRapido);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDescripcionCatalogo);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
@@ -159,6 +181,8 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label lblDescripcionCatalogo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txbFitroRapido;
     }
 }
 
