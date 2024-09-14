@@ -117,7 +117,7 @@ namespace Tp_WinForm_Equipo_7A
                 MessageBox.Show(ex.ToString());
             }
         }
-        //tener en cuenta que el filtro rapido es por nombre unicamente
+
         private void txbFitroRapido_TextChanged(object sender, EventArgs e)
         {
 
@@ -175,7 +175,7 @@ namespace Tp_WinForm_Equipo_7A
                 string campo = cboCampo.SelectedItem.ToString();
                 string criterio = cboCriterio.SelectedItem.ToString();
                 string filtro = txbFiltroCompleto.Text;
-                dgv_ArticulosTodos.DataSource = negocio.Filtrar(campo, criterio, filtro);
+                dgv_ArticulosTodos.DataSource = negocio.filtrar(campo, criterio, filtro);
             }
             catch (Exception ex)
             {

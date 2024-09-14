@@ -21,7 +21,7 @@ namespace Tp_WinForm_Equipo_7A
         {
 
             TodosArticulos art = new TodosArticulos();
-           
+            art.ShowDialog();
 
         }
 
