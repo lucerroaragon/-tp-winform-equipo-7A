@@ -22,7 +22,8 @@ namespace Negocio
 
       public AccesoDatos()
       {
-            conexion = new SqlConnection("Server=localhost,1433; Database=CATALOGO_P3_DB; User Id=sa; Password=17513169Marie..; TrustServerCertificate=True;");
+            //conexion = new SqlConnection("Server=localhost,1433; Database=CATALOGO_P3_DB; User Id=sa; Password=17513169Marie..; TrustServerCertificate=True;");
+            conexion = new SqlConnection("server=.\\LABORATORIO3; database=CATALOGO_P3_DB; integrated security=true");
             comando = new SqlCommand();
       }
 
