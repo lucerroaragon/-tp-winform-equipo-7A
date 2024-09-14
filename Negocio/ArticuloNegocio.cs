@@ -197,14 +197,7 @@ namespace Negocio
 
             try
             {
-
-
-
-
-
                 return lista;
-
-
             }
             catch (Exception ex)
             {

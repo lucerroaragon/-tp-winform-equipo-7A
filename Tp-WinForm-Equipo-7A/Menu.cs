@@ -19,12 +19,20 @@ namespace Tp_WinForm_Equipo_7A
 
         private void articulosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             TodosArticulos art = new TodosArticulos();
             art.ShowDialog();
-
         }
 
-        
+        private void ItemMenuMarcas_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ItemMenuCategorias_Click(object sender, EventArgs e)
+        {
+            MenuCategoria menuCategoria = new MenuCategoria();
+            menuCategoria.ShowDialog();
+
+        }
     }
 }

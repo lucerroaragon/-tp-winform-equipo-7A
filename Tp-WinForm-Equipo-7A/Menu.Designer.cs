@@ -77,6 +77,7 @@
             this.ItemMenuMarcas.Name = "ItemMenuMarcas";
             this.ItemMenuMarcas.Size = new System.Drawing.Size(221, 64);
             this.ItemMenuMarcas.Text = "&Marcas";
+            this.ItemMenuMarcas.Click += new System.EventHandler(this.ItemMenuMarcas_Click);
             // 
             // ItemMenuCategorias
             // 
@@ -85,6 +86,7 @@
             this.ItemMenuCategorias.Name = "ItemMenuCategorias";
             this.ItemMenuCategorias.Size = new System.Drawing.Size(221, 64);
             this.ItemMenuCategorias.Text = "&Categorias";
+            this.ItemMenuCategorias.Click += new System.EventHandler(this.ItemMenuCategorias_Click);
             // 
             // Menú
             // 
