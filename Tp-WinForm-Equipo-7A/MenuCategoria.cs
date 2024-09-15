@@ -66,7 +66,7 @@ namespace Tp_WinForm_Equipo_7A
             Categoria seleccionado;
             try
             {
-                DialogResult respuesta = MessageBox.Show("Vamos a liminar el articulo, ¿Estas seguro?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult respuesta = MessageBox.Show("Vamos a liminar esta categoria, ¿Estas seguro?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (respuesta == DialogResult.Yes)
                 {
                     seleccionado = (Categoria)dvgCategoria.CurrentRow.DataBoundItem;
