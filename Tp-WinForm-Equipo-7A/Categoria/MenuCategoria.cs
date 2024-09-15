@@ -22,9 +22,7 @@ namespace Tp_WinForm_Equipo_7A
 
         private void MenuCategoria_Load(object sender, EventArgs e)
         {
-            Cargar();
-
-            
+            Cargar();           
 
         }
         

@@ -46,22 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AltaArticulo.cs">
+    <Compile Include="Articulo\AltaArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaArticulo.Designer.cs">
+    <Compile Include="Articulo\AltaArticulo.Designer.cs">
       <DependentUpon>AltaArticulo.cs</DependentUpon>
     </Compile>
-    <Compile Include="AltaCategoria.cs">
+    <Compile Include="Categoria\AltaCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaCategoria.Designer.cs">
+    <Compile Include="Categoria\AltaCategoria.Designer.cs">
       <DependentUpon>AltaCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="AltaMarca.cs">
+    <Compile Include="Marca\AltaMarca.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaMarca.Designer.cs">
+    <Compile Include="Marca\AltaMarca.Designer.cs">
       <DependentUpon>AltaMarca.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
@@ -70,37 +70,46 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ArticulosTodos.cs">
+    <Compile Include="Articulo\ArticulosTodos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ArticulosTodos.Designer.cs">
+    <Compile Include="Articulo\ArticulosTodos.Designer.cs">
       <DependentUpon>ArticulosTodos.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuCategoria.cs">
+    <Compile Include="Categoria\MenuCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuCategoria.Designer.cs">
+    <Compile Include="Categoria\MenuCategoria.Designer.cs">
       <DependentUpon>MenuCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marca\MenuMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marca\MenuMarca.Designer.cs">
+      <DependentUpon>MenuMarca.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AltaArticulo.resx">
+    <EmbeddedResource Include="Articulo\AltaArticulo.resx">
       <DependentUpon>AltaArticulo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AltaCategoria.resx">
+    <EmbeddedResource Include="Categoria\AltaCategoria.resx">
       <DependentUpon>AltaCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AltaMarca.resx">
+    <EmbeddedResource Include="Marca\AltaMarca.resx">
       <DependentUpon>AltaMarca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ArticulosTodos.resx">
+    <EmbeddedResource Include="Articulo\ArticulosTodos.resx">
       <DependentUpon>ArticulosTodos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuCategoria.resx">
+    <EmbeddedResource Include="Categoria\MenuCategoria.resx">
       <DependentUpon>MenuCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marca\MenuMarca.resx">
+      <DependentUpon>MenuMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
