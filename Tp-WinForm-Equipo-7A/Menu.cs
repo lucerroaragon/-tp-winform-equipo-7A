@@ -25,7 +25,8 @@ namespace Tp_WinForm_Equipo_7A
 
         private void ItemMenuMarcas_Click(object sender, EventArgs e)
         {
-            
+            MenuMarca menuMarca = new MenuMarca();
+            menuMarca.ShowDialog();
         }
 
         private void ItemMenuCategorias_Click(object sender, EventArgs e)

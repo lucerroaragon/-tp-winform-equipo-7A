@@ -43,7 +43,13 @@ namespace Tp_WinForm_Equipo_7A
 
             try
             {
-                if(articulo ==  null)
+                if (string.IsNullOrWhiteSpace(txtNombre.Text))
+                {
+                    MessageBox.Show("Los campos del formulario no deben estar vacios.");
+                    return;
+                }
+
+                if (articulo ==  null)
                     articulo = new Articulo();
                 articulo.imagen = new Imagen();
 
