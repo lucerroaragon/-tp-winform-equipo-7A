@@ -35,10 +35,7 @@ namespace Tp_WinForm_Equipo_7A
             {
                 if (categoria != null)
                 {
-
                     txtNombre.Text = categoria.Nombre;
-
-
                 }
 
             }
@@ -58,7 +55,7 @@ namespace Tp_WinForm_Equipo_7A
             {
                 if (string.IsNullOrWhiteSpace(txtNombre.Text))
                 {
-                    MessageBox.Show("El nombre de la categoría no puede estar vacío.");
+                    MessageBox.Show("Los campos del formulario no debe etar vacio.");
                     return; 
                 }
 
@@ -92,8 +89,7 @@ namespace Tp_WinForm_Equipo_7A
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
-
-
+        
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();

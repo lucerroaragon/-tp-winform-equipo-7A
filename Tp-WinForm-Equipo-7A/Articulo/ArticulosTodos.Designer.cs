@@ -37,7 +37,6 @@
             this.lblDescripcionCatalogo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txbFitroRapido = new System.Windows.Forms.TextBox();
-            this.btnVerDetalle = new System.Windows.Forms.Button();
             this.lblCampo = new System.Windows.Forms.Label();
             this.lblCriterio = new System.Windows.Forms.Label();
             this.lblFiltroCompleto = new System.Windows.Forms.Label();
@@ -153,17 +152,6 @@
             this.txbFitroRapido.TabIndex = 8;
             this.txbFitroRapido.TextChanged += new System.EventHandler(this.txbFitroRapido_TextChanged);
             // 
-            // btnVerDetalle
-            // 
-            this.btnVerDetalle.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnVerDetalle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerDetalle.Location = new System.Drawing.Point(918, 600);
-            this.btnVerDetalle.Name = "btnVerDetalle";
-            this.btnVerDetalle.Size = new System.Drawing.Size(119, 36);
-            this.btnVerDetalle.TabIndex = 9;
-            this.btnVerDetalle.Text = "Ver detalle";
-            this.btnVerDetalle.UseVisualStyleBackColor = false;
-            // 
             // lblCampo
             // 
             this.lblCampo.AutoSize = true;
@@ -245,7 +233,6 @@
             this.Controls.Add(this.lblFiltroCompleto);
             this.Controls.Add(this.lblCriterio);
             this.Controls.Add(this.lblCampo);
-            this.Controls.Add(this.btnVerDetalle);
             this.Controls.Add(this.txbFitroRapido);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDescripcionCatalogo);
@@ -276,7 +263,6 @@
         private System.Windows.Forms.Label lblDescripcionCatalogo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txbFitroRapido;
-        private System.Windows.Forms.Button btnVerDetalle;
         private System.Windows.Forms.Label lblCampo;
         private System.Windows.Forms.Label lblCriterio;
         private System.Windows.Forms.Label lblFiltroCompleto;
