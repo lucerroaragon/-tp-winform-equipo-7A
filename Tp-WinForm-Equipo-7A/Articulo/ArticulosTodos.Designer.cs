@@ -44,6 +44,7 @@
             this.cboCampo = new System.Windows.Forms.ComboBox();
             this.txbFiltroCompleto = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.btn_Detalles = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ArticulosTodos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pxbArticulo)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +74,7 @@
             this.dgv_ArticulosTodos.MultiSelect = false;
             this.dgv_ArticulosTodos.Name = "dgv_ArticulosTodos";
             this.dgv_ArticulosTodos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ArticulosTodos.Size = new System.Drawing.Size(647, 370);
+            this.dgv_ArticulosTodos.Size = new System.Drawing.Size(592, 370);
             this.dgv_ArticulosTodos.TabIndex = 1;
             this.dgv_ArticulosTodos.SelectionChanged += new System.EventHandler(this.dgv_ArticulosTodos_SelectionChanged);
             // 
@@ -148,7 +149,7 @@
             // 
             this.txbFitroRapido.Location = new System.Drawing.Point(139, 165);
             this.txbFitroRapido.Name = "txbFitroRapido";
-            this.txbFitroRapido.Size = new System.Drawing.Size(546, 20);
+            this.txbFitroRapido.Size = new System.Drawing.Size(501, 20);
             this.txbFitroRapido.TabIndex = 8;
             this.txbFitroRapido.TextChanged += new System.EventHandler(this.txbFitroRapido_TextChanged);
             // 
@@ -218,6 +219,18 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // btn_Detalles
+            // 
+            this.btn_Detalles.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btn_Detalles.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Detalles.Location = new System.Drawing.Point(521, 600);
+            this.btn_Detalles.Name = "btn_Detalles";
+            this.btn_Detalles.Size = new System.Drawing.Size(119, 36);
+            this.btn_Detalles.TabIndex = 17;
+            this.btn_Detalles.Text = "Ver Detalles";
+            this.btn_Detalles.UseVisualStyleBackColor = false;
+            this.btn_Detalles.Click += new System.EventHandler(this.btn_Detalles_Click);
+            // 
             // TodosArticulos
             // 
             this.AllowDrop = true;
@@ -226,6 +239,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1185, 725);
+            this.Controls.Add(this.btn_Detalles);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txbFiltroCompleto);
             this.Controls.Add(this.cboCampo);
@@ -242,6 +256,9 @@
             this.Controls.Add(this.pxbArticulo);
             this.Controls.Add(this.dgv_ArticulosTodos);
             this.Controls.Add(this.lblCatalogo);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1201, 764);
+            this.MinimumSize = new System.Drawing.Size(1201, 764);
             this.Name = "TodosArticulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.TodosArticulos_Load);
@@ -270,6 +287,7 @@
         private System.Windows.Forms.ComboBox cboCampo;
         private System.Windows.Forms.TextBox txbFiltroCompleto;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btn_Detalles;
     }
 }
 

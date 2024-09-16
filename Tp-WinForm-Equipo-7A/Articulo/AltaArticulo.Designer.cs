@@ -45,6 +45,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtUrl = new System.Windows.Forms.TextBox();
             this.pbxAltaArticulo = new System.Windows.Forms.PictureBox();
+            this.lbl_MasImagenes = new System.Windows.Forms.Label();
+            this.btn_AgregarMasImagenes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAltaArticulo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,7 +130,7 @@
             // 
             this.btoAceptar.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btoAceptar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btoAceptar.Location = new System.Drawing.Point(120, 339);
+            this.btoAceptar.Location = new System.Drawing.Point(205, 374);
             this.btoAceptar.Name = "btoAceptar";
             this.btoAceptar.Size = new System.Drawing.Size(119, 37);
             this.btoAceptar.TabIndex = 7;
@@ -140,7 +142,7 @@
             // 
             this.btoCancelar.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btoCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btoCancelar.Location = new System.Drawing.Point(255, 339);
+            this.btoCancelar.Location = new System.Drawing.Point(340, 374);
             this.btoCancelar.Name = "btoCancelar";
             this.btoCancelar.Size = new System.Drawing.Size(119, 37);
             this.btoCancelar.TabIndex = 8;
@@ -152,7 +154,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(117, 244);
+            this.label1.Location = new System.Drawing.Point(117, 276);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 17);
             this.label1.TabIndex = 11;
@@ -162,7 +164,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(117, 280);
+            this.label2.Location = new System.Drawing.Point(117, 312);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 17);
             this.label2.TabIndex = 12;
@@ -174,7 +176,7 @@
             this.cboMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMarca.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cboMarca.FormattingEnabled = true;
-            this.cboMarca.Location = new System.Drawing.Point(203, 244);
+            this.cboMarca.Location = new System.Drawing.Point(203, 276);
             this.cboMarca.Name = "cboMarca";
             this.cboMarca.Size = new System.Drawing.Size(167, 23);
             this.cboMarca.TabIndex = 5;
@@ -185,7 +187,7 @@
             this.cboCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCategoria.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cboCategoria.FormattingEnabled = true;
-            this.cboCategoria.Location = new System.Drawing.Point(203, 280);
+            this.cboCategoria.Location = new System.Drawing.Point(203, 312);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(167, 23);
             this.cboCategoria.TabIndex = 6;
@@ -219,12 +221,34 @@
             this.pbxAltaArticulo.TabIndex = 17;
             this.pbxAltaArticulo.TabStop = false;
             // 
+            // lbl_MasImagenes
+            // 
+            this.lbl_MasImagenes.AutoSize = true;
+            this.lbl_MasImagenes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lbl_MasImagenes.Location = new System.Drawing.Point(117, 245);
+            this.lbl_MasImagenes.Name = "lbl_MasImagenes";
+            this.lbl_MasImagenes.Size = new System.Drawing.Size(67, 17);
+            this.lbl_MasImagenes.TabIndex = 18;
+            this.lbl_MasImagenes.Text = "Imagen +";
+            // 
+            // btn_AgregarMasImagenes
+            // 
+            this.btn_AgregarMasImagenes.Location = new System.Drawing.Point(203, 243);
+            this.btn_AgregarMasImagenes.Name = "btn_AgregarMasImagenes";
+            this.btn_AgregarMasImagenes.Size = new System.Drawing.Size(75, 23);
+            this.btn_AgregarMasImagenes.TabIndex = 19;
+            this.btn_AgregarMasImagenes.Text = "Agregar";
+            this.btn_AgregarMasImagenes.UseVisualStyleBackColor = true;
+            this.btn_AgregarMasImagenes.Click += new System.EventHandler(this.btn_AgregarMasImagenes_Click);
+            // 
             // AltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(714, 450);
+            this.Controls.Add(this.btn_AgregarMasImagenes);
+            this.Controls.Add(this.lbl_MasImagenes);
             this.Controls.Add(this.pbxAltaArticulo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtUrl);
@@ -272,5 +296,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUrl;
         private System.Windows.Forms.PictureBox pbxAltaArticulo;
+        private System.Windows.Forms.Label lbl_MasImagenes;
+        private System.Windows.Forms.Button btn_AgregarMasImagenes;
     }
 }

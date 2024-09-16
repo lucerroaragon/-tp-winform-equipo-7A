@@ -36,6 +36,7 @@ namespace Tp_WinForm_Equipo_7A
             Articulo seleccionado = (Articulo)dgv_ArticulosTodos.CurrentRow.DataBoundItem;
             dgv_ArticulosTodos.Columns["imagen"].Visible = false;
             dgv_ArticulosTodos.Columns["IdArticulo"].Visible = false;
+            dgv_ArticulosTodos.Columns["Descripcion"].Visible = false;
             cargarImagen(seleccionado.imagen.Url);
 
 
@@ -94,8 +95,16 @@ namespace Tp_WinForm_Equipo_7A
             AltaArticulo modificar = new AltaArticulo(seleccionado);
             modificar.ShowDialog();
             cargar();
+        }
 
+        private void btn_Detalles_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado;
+            seleccionado = (Articulo)dgv_ArticulosTodos.CurrentRow.DataBoundItem;
 
+            ArticulosDetalles articulosDetalles = new ArticulosDetalles(seleccionado);
+            articulosDetalles.ShowDialog();
+            cargar();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -186,6 +195,5 @@ namespace Tp_WinForm_Equipo_7A
 
         }
 
-        
     }
 }

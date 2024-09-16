@@ -60,6 +60,7 @@ namespace Tp_WinForm_Equipo_7A
                 articulo.imagen.Url = txtUrl.Text;
                 articulo.categoria = (Categoria)cboCategoria.SelectedItem;
                 articulo.marca = (Marca)cboMarca.SelectedItem;
+                
 
                 if (articulo.IdArticulo != 0)
                 {
@@ -138,6 +139,12 @@ namespace Tp_WinForm_Equipo_7A
                 pbxAltaArticulo.Load("https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png");
 
             }
+        }
+
+        private void btn_AgregarMasImagenes_Click(object sender, EventArgs e)
+        {
+            MasImagenes masImagenes = new MasImagenes();
+            masImagenes.ShowDialog();
         }
     }
 }

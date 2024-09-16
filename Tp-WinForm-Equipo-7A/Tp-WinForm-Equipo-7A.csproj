@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articulo\ArticulosDetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulo\ArticulosDetalles.Designer.cs">
+      <DependentUpon>ArticulosDetalles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Articulo\AltaArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="Marca\AltaMarca.Designer.cs">
       <DependentUpon>AltaMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasImagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasImagenes.Designer.cs">
+      <DependentUpon>MasImagenes.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -90,6 +102,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Articulo\ArticulosDetalles.resx">
+      <DependentUpon>ArticulosDetalles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Articulo\AltaArticulo.resx">
       <DependentUpon>AltaArticulo.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Articulo\ArticulosTodos.resx">
       <DependentUpon>ArticulosTodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasImagenes.resx">
+      <DependentUpon>MasImagenes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

@@ -63,6 +63,8 @@ namespace Negocio
         public void agregar ( Articulo nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+            
             Imagen img = new Imagen();
             try
             {
@@ -87,22 +89,9 @@ namespace Negocio
             }
 
             int idNuevo = obtenerUltimoId();
-            AccesoDatos datos2 = new AccesoDatos();
-            try
-            {
-                datos2.setearConsulta("insert into IMAGENES (IdArticulo, ImagenUrl) VALUES (" + idNuevo + ", @UrlImagen)");
-                datos2.setearParametro("@UrlImagen", nuevo.imagen.Url);
-                datos2.ejecutarAccion();
-            }
-            catch (Exception ex)
-            {
 
-                throw ex;
-            }
-            finally 
-            {
-                datos2.cerrarConexion();
-            }
+            imagenNegocio.agregar(idNuevo, nuevo.imagen.Url);
+            
         }
         public void modificar ( Articulo arti)
         {
@@ -149,6 +138,7 @@ namespace Negocio
             }
 
         }
+
 
         public void eliminar(int id)
         {
@@ -203,10 +193,9 @@ namespace Negocio
             {
 
                 throw ex;
-            }
-
-
-            
+            }  
         }
+
+
     }
 }
